@@ -1,0 +1,268 @@
+
+body{
+    background-color: #F6F6F6;
+}
+
+/*FORM-ADD */
+
+.container-hidde{
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    padding: 0px;
+}
+
+.form-container{
+    background-color: #840731;
+    color: #fff;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    border-radius: 20px 20px 0px 20px;
+    box-shadow: 5px 5px 10px rgb(82, 80, 80);
+    z-index: 10;
+}
+
+.form-container label{
+    display: block;
+}
+
+.input-box{
+    font-size: 1vw;
+    padding: 5px;
+
+}
+
+.input-box input[type="checkbox"]{
+    display: inline;
+    width: 5%;
+    margin: 20px 0px;
+}
+
+
+.input-box input{
+    width: 100%;
+}
+
+
+.form-container button{
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    transition: transform 1s;
+}
+
+.form-container button:hover{
+    transform: scale(1.2);
+}
+
+.form-container{
+
+}
+
+
+
+/*ANIMATION*/
+
+.form-hidde{
+    animation: formSmall .5s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+.form-hidde-reverse{
+    animation: formBig .5s;
+    animation-fill-mode: forwards;
+    overflow:inherit;
+}
+
+
+
+
+
+
+@keyframes formSmall{
+
+    0%{
+        padding: 30px 30px;
+        width: 25%;
+        height: 80%;
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        padding: 0px;
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+    }
+}
+
+@keyframes formBig{
+
+    0%{
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+        padding: 0px;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        width: 25%;
+        height: 80%;
+        padding: 30px 30px;
+    }
+}
+
+
+
+
+
+
+/*-------------------------------------------------*/
+
+
+/* FORM-EDIT */
+.section-edit{
+    padding: 20px;
+}
+.section-edit h3 {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.section-edit label, .section-edit input, .section-edit input[type='checkbox'], .section-edit span{
+    font-size: 3vw;
+}
+
+.box-button{
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+.box-button a, .box-button button:hover{
+    color: #fff;
+    background-color: #840731;
+    padding: 5px 10px;
+    transition: background-color 0.5s, color 0.5s;
+    
+}
+.box-button a:hover, .box-button button{
+    color: #840731;
+    background: #fff;
+    border: 1px solid #840731;
+    padding: 5px 10px;
+    
+}
+
+.box-button button{
+    margin-right: 30px;
+}
+
+
+
+
+/* Preview */ 
+
+#list{
+    display: flex;
+}
+
+.showMore{
+    margin-left: 1vw;
+    position: absolute;
+    transform: translateX(-2vw);
+    right: 0;
+}
+
+.showMore svg{
+    color:  #f5c1d3;
+    width: 5.5vw;
+    height: 4vw; 
+    padding: .5vh .5vw;
+    border: 4px solid #f5c1d3;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: border .1s, color .1s ;
+}
+
+.showMore:hover svg{
+    color: #ffffff;
+    border: 4px solid #fff;
+}
+
+#list img{
+    width: 5vw !important;
+    height: 5vh !important;
+}
+
+.imgBD img{
+    width: 20vw !important;
+    height: 20vh !important;
+}
+/* box-preview */
+
+
+.box-preview{
+    display: flex;
+    position: absolute;
+    right: 1vw;
+    background-color: rgba(255, 255, 255, 0.863);
+    padding: 1vh .8vw 2vh .8vw;
+    border-radius: 10px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 88% 93%, 86% 100%, 83% 92%, 1% 92%);
+    transform: translateY(-15vh);
+    z-index: 50;
+}
+
+.box-preview span{
+    display: block !important;
+    border: 1px solid #840731;
+}
+
+.box-preview img{
+    width: 5.5vw !important;
+    height: 14vh !important;
+}
+
+
+/* FORM EDIT */ 
+
+
+.form-edit .showMore svg{
+    width: 14vw;
+    height: 12.5vw; 
+    border-radius: 10px;
+}
+
+.form-edit #list img{
+    width: 14vw !important;
+    height: 12.5vw !important;
+}
+
+
+/* Box Preview */ 
+
+.form-edit .box-preview{
+    right: 1vw;
+    padding: 1.5vh 1vw 4vh 1vw;
+    border-radius: 20px;
+    transform: translateY(-20vh);
+}
+
+.form-edit .box-preview span{
+    display: block !important;
+}
+
+.form-edit .box-preview img{
+    width: 20vw !important;
+    height: 24.5vw !important;
+}

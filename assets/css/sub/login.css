@@ -1,0 +1,40 @@
+/* Background GLOBAL */
+
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/*  SECTION MAIN */ 
+
+.col-spacer {
+    background-color: #fcf6f8; 
+    border-radius: 10px;
+    
+}
+
+.header-txt h1{
+   color: #840731;
+   font-size: clamp(2rem, 3rem, 4vw) !important;
+   text-shadow: 1px 1px 1px rgb(145, 145, 145);
+}
+
+.input-box label{
+    font-size: clamp(.8rem, 1rem, 2vw) !important;
+}
+
+.button-box button{
+    background-color: #840731;
+    color: #fff;
+}
